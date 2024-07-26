@@ -49,6 +49,8 @@ a:focus{
 	color: #fff;
 }
 
+
+
 .preloader{
 	position: fixed;
 	top: 0;
@@ -527,8 +529,8 @@ header .navbar.sticky-header{
 
 .service-single{
 	background: #222;
-	padding: 40px 30px;
-	text-align: center;
+	padding: 40px 150px;
+	text-align: left;
 	border: 1px solid #333;
 	margin-bottom: 30px;
 	position: relative;
@@ -585,13 +587,96 @@ header .navbar.sticky-header{
 	margin-bottom: 0;
 }
 
+/* Experience Section */
+.my-resume .container-fluid {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+@media (min-width: 1200px) {
+    .my-resume .container-fluid {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+}
+
+.my-resume {
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+#experience-item {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+#experience-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.job {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+	margin: 30px 0;
+}
+
+.job-description {
+    flex-grow: 1;
+	color:#c4c2c2;
+}
+
+.job-header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.job-title {
+  color:white;
+  font-weight: bold;
+  margin: 0px;
+}
+
+.job-dates {
+  flex: 0 1 auto;
+  text-align: right;
+  color: #b0b0b0; /* Slightly darker than the main text */
+}
+
+.job-description {
+  width: 100%;
+  text-align: justify;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .job-header {
+    flex-direction: column;
+  }
+
+  .job-title, .job-dates {
+    width: 100%;
+    max-width: 100%;
+    text-align: left;
+  }
+
+  .job-dates {
+    margin-top: 5px;
+    font-style: italic;
+  }
+}
+
 /***************************************/
 /*****     My Resume Section css    ****/
 /***************************************/
 
-.my-resume{
-	padding: 100px 0 70px;
-}
+
 
 .sub-title{
 	display: inline-block;
@@ -601,7 +686,6 @@ header .navbar.sticky-header{
 	background: #ff5d56;
 	padding: 14px 20px;
 	text-transform: uppercase;
-	margin-bottom: 50px;
 }
 
 .sub-title i{
@@ -868,7 +952,7 @@ header .navbar.sticky-header{
 	display: inline-block;
 	font-size: 18px;
 	background: #222;
-	color: #707070;
+	color: #ffffff;
 	padding: 18px 40px;
 	border: 1px solid #333;
 	transition: all 0.3s;
