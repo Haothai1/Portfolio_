@@ -529,7 +529,7 @@ header .navbar.sticky-header{
 
 .service-single{
 	background: #222;
-	padding: 40px 150px;
+	padding: 40px 48px;
 	text-align: left;
 	border: 1px solid #333;
 	margin-bottom: 30px;
@@ -686,6 +686,7 @@ header .navbar.sticky-header{
 	background: #ff5d56;
 	padding: 14px 20px;
 	text-transform: uppercase;
+	margin: 50px 0;
 }
 
 .sub-title i{
@@ -916,6 +917,10 @@ header .navbar.sticky-header{
 	color: #ff5d56;
 	font-weight: 400;
 	margin-bottom: 20px;
+}
+.mfp-content .content .desc a{
+	color: rgb(117, 117, 222);
+	border-color:rgb(117, 117, 222);
 }
 
 .mfp-content .content .desc p{
